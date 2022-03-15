@@ -34,7 +34,7 @@
       "default": "/tmp"
     },
     "INPUT_CSV":{
-      "input_type": "str",
+      "input_type": "str required",
       "description": "Specifies AMI input data file (REQUIRED).",
       "default": ""
     },
@@ -87,7 +87,7 @@
       "default": "kmeans"
     },
     "GROUP_COUNT":{
-      "input_type": "int",
+      "input_type": "int required",
       "description": "Grouping count. Must be a positive number (REQUIRED).",
       "default": "0"
     },
