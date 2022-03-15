@@ -8,22 +8,22 @@
     "VERBOSE":{
       "input_type": "boolean",
       "description": "Enables verbose output.",
-      "default": ""
+      "default": "True"
     },
     "DEBUG":{
       "input_type": "boolean",
       "description": "Enables debug output.",
-      "default": ""
+      "default": "True"
     },
     "QUIET":{
       "input_type": "boolean",
       "description": "Disables all output.",
-      "default": ""
+      "default": "False"
     },
     "WARNING":{
       "input_type": "boolean",
       "description": "Enables warning output.",
-      "default": ""
+      "default": "True"
     },
     "Input":{
       "input_type": "title"
