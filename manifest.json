@@ -4,6 +4,12 @@
   "git" : "https://github.com/openfido/feature-testing.git",
   "branch" : "main",
   "script" : "openfido.sh",
+  "manual": {
+    "config": "csv",
+    "loadshapes": "csv",
+    "gridlabd": "rc",
+    "etc": "json"
+  }, 
   "config" : {
     "VERBOSE":{
       "input_type": "boolean",
@@ -160,5 +166,57 @@
       "description": "Specifies the scaling of the schedule data to load (e.g., 1kVA=1000VA)",
       "default": "1000"
     }
-  }
+  },
+  "loadshapes": {
+    "DATA_1":{
+      "input_type": "str",
+      "description": "Specifies the output GLM schedule model fragment.",
+      "default": ""
+    },
+    "DATA_2":{
+      "input_type": "float",
+      "description": "Specifies the scaling of the schedule data to load (e.g., 1kVA=1000VA)",
+      "default": "1000"
+    }
+  },
+  "gridlabd": {
+    "COMMAND_1":{
+      "description": "Adds the -D command",
+      "default": "-D csv_load_options=\"-f config\""
+    },
+    "CONFIG":{
+      "description": "Adds the config file requirement",
+      "default": "config.csv"
+    },
+    "UPLOAD_1":{
+      "description": "Requires the clock.glm file",
+      "default": "clock.glm"
+    },
+    "UPLOAD_2":{
+      "description": "Another way of requiring multiple files in one field",
+      "default": "weather.glm test_R1-12.47-1.glm"
+    },
+    "DATA_1":{
+      "description": "Adds the other -D command",
+      "default": "-D minimum_timestep=3600"
+    }
+    },
+    "etc": {
+      "Json": {
+        "input_type": "parent",
+        "complicated": {
+          "input_type": "parent",
+          "yes": {
+            "input_type": "child",
+            "damn": "ok",
+            "futility": "alright"
+          },
+          "no": {
+            "are_you_sure": {
+              "no": "thats_what_i_thought"
+            }
+          }
+        }
+      }
+    }
 }
