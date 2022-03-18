@@ -203,20 +203,32 @@
     },
     "etc": {
       "Json": {
-        "input_type": "parent",
-        "complicated": {
-          "input_type": "parent",
-          "yes": {
-            "input_type": "child",
-            "damn": "ok",
-            "futility": "alright"
-          },
-          "no": {
-            "are_you_sure": {
-              "no": "thats_what_i_thought"
-            }
-          }
-        }
+        "input_type": "arr",
+        "default": "item 1, item 2, item 3"
+      },
+      "application": {
+        "input_type": "str",
+        "default": "openfido"
+      },
+      "version": {
+        "input_type": "int",
+        "default": 0
+      },
+      "tooltype": {
+        "input_type": "str",
+        "default": "pipeline"
+      },
+      "valid": {
+        "input_type": "boolean",
+        "default": true
+      },
+      "inputs": {
+        "input_type": "int",
+        "default": -1
+      },
+      "outputs": {
+        "input_type": "int",
+        "default": 0
       }
     }
 }
