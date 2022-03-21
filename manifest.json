@@ -14,7 +14,8 @@
     "VERBOSE":{
       "input_type": "boolean",
       "description": "Enables verbose output.",
-      "default": "true"
+      "default": "true",
+      "prompt": "wordly"
     },
     "DEBUG":{
       "input_type": "boolean",
@@ -176,7 +177,8 @@
     "DATA_2":{
       "input_type": "float",
       "description": "Specifies the scaling of the schedule data to load (e.g., 1kVA=1000VA)",
-      "default": "1000"
+      "default": "1000",
+      "prompt": "promptly"
     }
   },
   "gridlabd": {
@@ -198,13 +200,15 @@
     },
     "DATA_1":{
       "description": "Adds the other -D command",
-      "default": "-D minimum_timestep=3600"
+      "default": "-D minimum_timestep=3600",
+      "prompt": "promptly"
     }
     },
     "etc": {
       "Json": {
         "input_type": "arr",
-        "default": "item 1, item 2, item 3"
+        "default": "item 1, item 2, item 3",
+        "prompt": "hmm"
       },
       "application": {
         "input_type": "str",
