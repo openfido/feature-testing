@@ -166,6 +166,16 @@
       "input_type": "float",
       "description": "Specifies the scaling of the schedule data to load (e.g., 1kVA=1000VA)",
       "default": "1000"
+    },
+    "ENUM_TEST":{
+      "input_type": "enum",
+      "description": "tests whether enum works",
+      "default": "tests, whether, enum, works"
+    },
+    "SET_TEST":{
+      "input_type": "set",
+      "description": "tests whether set works",
+      "default": "tests, whether, set, works"
     }
   },
   "loadshapes": {
