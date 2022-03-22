@@ -96,7 +96,7 @@
     "GROUP_COUNT":{
       "input_type": "int required",
       "description": "Grouping count. Must be a positive number (REQUIRED).",
-      "default": "0"
+      "default": 0
     },
     "Outputs":{
       "input_type": "title"
