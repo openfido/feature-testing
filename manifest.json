@@ -189,6 +189,12 @@
       "description": "Specifies the scaling of the schedule data to load (e.g., 1kVA=1000VA)",
       "default": "1000",
       "prompt": "promptly"
+    },
+    "UPLOAD_1":{
+      "input_type": "upload",
+      "description": "might be able to upload",
+      "default": "upload.csv",
+      "prompt": "testing upload"
     }
   },
   "gridlabd": {
