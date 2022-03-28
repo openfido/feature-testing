@@ -170,12 +170,14 @@
     "ENUM_TEST":{
       "input_type": "enum",
       "description": "tests whether enum works",
-      "default": "tests, whether, enum, works"
+      "default": "works",
+      "choices": "tests, whether, enum, works"
     },
     "SET_TEST":{
       "input_type": "set",
       "description": "tests whether set works",
-      "default": "tests, whether, set, works"
+      "default": "whether, set",
+      "choices": "tests, whether, set, works"
     }
   },
   "loadshapes": {
