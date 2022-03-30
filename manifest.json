@@ -2,7 +2,7 @@
   "description" : "Feature testing faked pipeline",
   "docker" : "debian:11",
   "git" : "https://github.com/openfido/feature-testing.git",
-  "branch" : "main",
+  "branch" : "branchtest",
   "script" : "openfido.sh",
   "manual": {
     "config": "csv",
@@ -15,7 +15,7 @@
       "input_type": "boolean",
       "description": "Enables verbose output.",
       "default": "true",
-      "prompt": "wordly"
+      "prompt": "This is branch hbu"
     },
     "DEBUG":{
       "input_type": "boolean",
