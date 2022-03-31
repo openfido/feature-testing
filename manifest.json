@@ -197,6 +197,12 @@
       "description": "might be able to upload",
       "default": "upload.csv",
       "prompt": "testing upload"
+    },
+    "UPLOAD_2":{
+      "input_type": "upload required",
+      "description": "might be able to upload???",
+      "default": "",
+      "prompt": "testing upload required"
     }
   },
   "gridlabd": {
