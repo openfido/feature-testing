@@ -123,7 +123,8 @@
       "description": "might be able to upload",
       "default": "upload.csv",
       "prompt": "testing upload comma 3",
-      "upload_max": 3
+      "upload_max": 3,
+      "space_delimited": false
     }
   },
   "gridlabd": {
