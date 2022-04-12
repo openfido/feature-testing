@@ -17,21 +17,6 @@
       "default": "true",
       "prompt": "wordly"
     },
-    "DEBUG":{
-      "input_type": "boolean",
-      "description": "Enables debug output.",
-      "default": "true"
-    },
-    "QUIET":{
-      "input_type": "boolean",
-      "description": "Disables all output.",
-      "default": "false"
-    },
-    "WARNING":{
-      "input_type": "boolean",
-      "description": "Enables warning output.",
-      "default": "true"
-    },
     "Input":{
       "input_type": "title"
     },
@@ -44,26 +29,6 @@
       "input_type": "str required",
       "description": "Specifies AMI input data file (REQUIRED).",
       "default": ""
-    },
-    "DATETIME_COLUMN":{
-      "input_type": "str",
-      "description": "Specifies the date/time column in the AMI file.",
-      "default": "0"
-    },
-    "ID_COLUMN":{
-      "input_type": "str",
-      "description": "Specifies the id column in the AMI file.",
-      "default": "1"
-    },
-    "DATA_COLUMN":{
-      "input_type": "str",
-      "description": "Specifies the data column in the AMI file.",
-      "default": "2"
-    },
-    "TIMEZONE_COLUMN":{
-      "input_type": "str",
-      "description": "Specifies the timezone column in the AMI file.",
-      "default": "3"
     },
     "DATETIME_FORMAT":{
       "input_type": "str",
@@ -88,11 +53,6 @@
       "description": "Group aggregation method. Valid methods include all DataFrame aggregators.",
       "default": "median"
     },
-    "GROUP_METHOD":{
-      "input_type": "str",
-      "description": "Grouping method. Valid method is `'kmeans'`",
-      "default": "kmeans"
-    },
     "GROUP_COUNT":{
       "input_type": "int required",
       "description": "Grouping count. Must be a positive number (REQUIRED).",
@@ -100,34 +60,6 @@
     },
     "Outputs":{
       "input_type": "title"
-    },
-    "LOADSHAPES_CSV":{
-      "input_type": "str",
-      "description": "Specifies the loadshape file to generate.",
-      "default": "loadshapes.csv"
-    },
-    "GROUPS_CSV":{
-      "input_type": "str",
-      "description": "Specifies the group file to generate.",
-      "default": "groups.csv"
-    },
-    "FLOAT_FORMAT":{
-      "input_type": "str",
-      "description": "Specifies float data format.",
-      "default": "%.4g"
-    },
-    "SCALING":{
-      "input_type": "str",
-      "description": "may be 'energy', 'power', or leave field empty for both.",
-      "default": ""
-    },
-    "Plotting":{
-      "input_type": "title"
-    },
-    "OUTPUT_PNG":{
-      "input_type": "str",
-      "description": "Specifies the output PNG file name.",
-      "default": ""
     },
     "PNG_FIGSIZE":{
       "input_type": "str",
@@ -141,26 +73,6 @@
     },
     "GridLAB-D":{
       "input_type": "title"
-    },
-    "LOADS_CSV":{
-      "input_type": "str",
-      "description": "Specifies the load mapping file.",
-      "default": ""
-    },
-    "CLOCK_GLM":{
-      "input_type": "str",
-      "description": "Specifies the output GLM clock model fragment.",
-      "default": "" 
-    },
-     "LOADS_GLM":{
-      "input_type": "str",
-      "description": "Specifies the output GLM load model fragment.",
-      "default": "" 
-    },
-    "SCHEDULES_GLM":{
-      "input_type": "str",
-      "description": "Specifies the output GLM schedule model fragment.",
-      "default": ""
     },
     "LOAD_SCALE":{
       "input_type": "float",
@@ -196,7 +108,22 @@
       "input_type": "upload",
       "description": "might be able to upload",
       "default": "upload.csv",
-      "prompt": "testing upload"
+      "prompt": "testing upload one",
+      "upload_max": 1
+    },
+    "UPLOAD_SPACE":{
+      "input_type": "upload",
+      "description": "might be able to upload",
+      "default": "upload.csv",
+      "prompt": "testing upload space",
+      "space_delimited": true
+    },
+    "UPLOAD_COMMA_3":{
+      "input_type": "upload",
+      "description": "might be able to upload",
+      "default": "upload.csv",
+      "prompt": "testing upload comma 3",
+      "upload_max": 3
     }
   },
   "gridlabd": {
