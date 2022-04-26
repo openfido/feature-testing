@@ -1,4 +1,5 @@
 {
+  "name" : "Feature Test",
   "description" : "Feature testing faked pipeline",
   "docker" : "debian:11",
   "git" : "https://github.com/openfido/feature-testing.git",
