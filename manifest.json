@@ -138,8 +138,10 @@
       "default": "config.csv"
     },
     "UPLOAD_1":{
+      "input_type": "upload",
       "description": "Requires the clock.glm file",
-      "default": "clock.glm"
+      "default": "clock.glm",
+      "space_delimited": true
     },
     "UPLOAD_2":{
       "description": "Another way of requiring multiple files in one field",
