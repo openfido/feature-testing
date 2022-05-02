@@ -1,6 +1,6 @@
-"""OpenFIDO feature-test pipeline
+"""OpenFIDO filestat pipeline
 
-This pipeline uses the file-stat pipeline as a base and creates a CSV file name containing the file status of the input files.
+This pipeline creates a CSV file name containing the file status of the input files.
 
 INPUTS
 
