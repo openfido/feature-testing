@@ -27,10 +27,14 @@ apt-get -q -y update > /dev/null
 apt-get -q -y install python3 python3-pip > /dev/null
 python3 -m pip install -q -r requirements.txt > /dev/null
 
+curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+apt-get install -y nodejs
+
 echo '*** INPUTS ***'
 ls -l $OPENFIDO_INPUT
 
 python3 openfido.py || error
+node hello.js || error
 
 echo '*** OUTPUTS ***'
 ls -l $OPENFIDO_OUTPUT
