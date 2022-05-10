@@ -36,9 +36,7 @@ pwd
 
 node hello.js $OPENFIDO_INPUT || error
 
-cd $OPENFIDO_INPUT
-
-cat $OPENFIDO_INPUT/urls.txt | while read f; do echo curl "${f}" -O; done;
+cat urls.txt | while read f; do echo curl "${f}" -O; done;
 
 ls -l $OPENFIDO_INPUT
 
