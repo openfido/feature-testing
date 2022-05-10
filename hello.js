@@ -17,6 +17,8 @@ args.forEach(function (val, index, array) {
             fs.readFile(`${val}/${file}`, (err, data) => {
                 if (err) throw err;
                 console.log(data);
+                const str = String.fromCharCode.apply(null, new Uint16Array(data));
+                console.log(str);
               }); 
         });
     });
