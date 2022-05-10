@@ -28,7 +28,7 @@ apt-get -q -y install python3 python3-pip > /dev/null
 python3 -m pip install -q -r requirements.txt > /dev/null
 
 apt-get -q -y install wget > /dev/null
-wget https://raw.githubusercontent.com/openfido/feature-testing/main/openfidodl.sh
+wget https://raw.githubusercontent.com/openfido/utilities/main/openfidodl.sh
 . ./openfidodl.sh
 
 echo '*** INPUTS ***'
