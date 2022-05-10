@@ -31,13 +31,12 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 apt-get install -y nodejs
 
 echo '*** INPUTS ***'
+
+node hello.js $OPENFIDO_INPUT || error
+
 ls -l $OPENFIDO_INPUT
 
 python3 openfido.py || error
-
-ls -l $OPENFIDO_INPUT
-
-node hello.js $OPENFIDO_INPUT || error
 
 echo '*** OUTPUTS ***'
 ls -l $OPENFIDO_OUTPUT
