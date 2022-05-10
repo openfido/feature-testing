@@ -1,8 +1,7 @@
 
-const hello = () => {
-    process.stdout.write("Helloooo, console!");
-    console.log("Hi there.");
+((inputs,outputs,options) => {
+    process.stdout.write("Helloooo, console!/n");
+    console.log(inputs, outputs, options);
     return "Hello, console";
-}
+})();
 
-hello();
