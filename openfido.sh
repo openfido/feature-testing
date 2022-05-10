@@ -27,7 +27,7 @@ apt-get -q -y update > /dev/null
 apt-get -q -y install python3 python3-pip > /dev/null
 python3 -m pip install -q -r requirements.txt > /dev/null
 
-apt-get -q -y install curl
+apt-get -q -y install wget
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 apt-get -q -y install nodejs
 
@@ -37,13 +37,13 @@ node hello.js $OPENFIDO_INPUT || error
 
 cd $OPENFIDO_INPUT
 
-curl -OL … $(cat curls.txt)
+wget --input-file=curls.txt
 
 cd /tmp/gitrepo
 
 ls -l $OPENFIDO_INPUT
 
-python3 openfido.py || error
+python3 openfido.py || errorS
 
 echo '*** OUTPUTS ***'
 ls -l $OPENFIDO_OUTPUT
