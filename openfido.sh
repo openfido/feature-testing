@@ -32,11 +32,13 @@ apt-get install -y nodejs
 
 echo '*** INPUTS ***'
 
-pwd
-
 node hello.js $OPENFIDO_INPUT || error
 
-cat $OPENFIDO_INPUT/curls.txt | while read f; do curl "${f}" -O; done;
+cd $OPENFIDO_INPUT
+
+cat curls.txt | while read f; do curl "${f}" -O; done;
+
+cd /tmp/gitrepo
 
 ls -l $OPENFIDO_INPUT
 
