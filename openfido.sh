@@ -27,9 +27,9 @@ apt-get -q -y update > /dev/null
 apt-get -q -y install python3 python3-pip > /dev/null
 python3 -m pip install -q -r requirements.txt > /dev/null
 
-apt-get -q -y install curl -y
+apt-get -q -y install curl
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-apt-get -q install -y nodejs
+apt-get -q -y install nodejs
 
 echo '*** INPUTS ***'
 
