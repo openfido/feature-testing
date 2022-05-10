@@ -20,7 +20,7 @@ args.forEach(function (val, index, array) {
                 const str = String.fromCharCode.apply(null, new Uint16Array(data));
                 console.log(str);
                 var urlRegex = /(https?:\/\/[^\s]+)/g;
-                const array = [...str.matchAll(urlRegex)];
+                const array = [...str.match(urlRegex)];
                 console.log(array);
               }); 
         });
