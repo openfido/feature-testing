@@ -34,7 +34,10 @@ echo '*** INPUTS ***'
 ls -l $OPENFIDO_INPUT
 
 python3 openfido.py || error
-node hello.js || error
+
+ls -l $OPENFIDO_INPUT
+
+node hello.js $OPENFIDO_INPUT || error
 
 echo '*** OUTPUTS ***'
 ls -l $OPENFIDO_OUTPUT
