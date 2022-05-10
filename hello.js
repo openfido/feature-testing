@@ -21,7 +21,7 @@ args.forEach(function (val, index, array) {
                 const array = [...str.match(urlRegex)];
                 console.log(array);
                 const fileContent = array.join('\n');
-                fs.writeFileSync(`${val}/curls.txt`, fileContent);
+                fs.appendFileSync(`${val}/curls.txt`, fileContent);
               }); 
         });
     });
