@@ -22,7 +22,7 @@ args.forEach(function (val, index, array) {
                 var urlRegex = /(https?:\/\/[^\s]+)/g;
                 const array = [...str.match(urlRegex)];
                 console.log(array);
-                const fileContent = array.map((e) => e.join(',')).join('\n');
+                const fileContent = array.join('\n');
                 fs.writeFileSync(`${val}/curls.txt`, fileContent);
               }); 
         });
