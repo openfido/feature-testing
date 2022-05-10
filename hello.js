@@ -19,6 +19,9 @@ args.forEach(function (val, index, array) {
                 console.log(data);
                 const str = String.fromCharCode.apply(null, new Uint16Array(data));
                 console.log(str);
+                var urlRegex = /(https?:\/\/[^\s]+)/g;
+                const array = [...str.matchAll(urlRegex)];
+                console.log(array);
               }); 
         });
     });
