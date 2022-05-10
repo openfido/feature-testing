@@ -14,7 +14,7 @@ args.forEach(function (val, index, array) {
         files.forEach(function (file) {
             // Do whatever you want to do with the file
             console.log(file);
-            fs.readFile(file, (err, data) => {
+            fs.readFile(`${val}/${file}`, (err, data) => {
                 if (err) throw err;
                 console.log(data);
               }); 
