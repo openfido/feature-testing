@@ -36,7 +36,7 @@ node hello.js $OPENFIDO_INPUT || error
 
 cd $OPENFIDO_INPUT
 
-curl … $(cat urls.txt)
+curl … $(cat curls.txt)
 
 cd /tmp/gitrepo
 
