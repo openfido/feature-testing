@@ -16,9 +16,7 @@ args.forEach(function (val, index, array) {
             console.log(file);
             fs.readFile(`${val}/${file}`, (err, data) => {
                 if (err) throw err;
-                console.log(data);
                 const str = String.fromCharCode.apply(null, new Uint16Array(data));
-                console.log(str);
                 var urlRegex = /(https?:\/\/[^\s]+)/g;
                 const array = [...str.match(urlRegex)];
                 console.log(array);
@@ -28,4 +26,3 @@ args.forEach(function (val, index, array) {
         });
     });
   });
-  
