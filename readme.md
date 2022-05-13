@@ -2,10 +2,16 @@ Pipeline status: [![validation](https://github.com/openfido/loadshape/actions/wo
 
 #THIS REPO IS FOR TESTING PURPOSES ONLY, AND CONTAINS ONLY THE DATA NEEDED FOR TESTING FEATURES. 
 ===========================
-
-[![Tests](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml/badge.svg)](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml)
 <a href="https://github.com/ropensci/drake/actions?query=workflow%3Alint"><img src="https://github.com/ropensci/drake/workflows/lint/badge.svg" alt="lint"></a>
+
+
+[![Tests](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml)
+[![Tests](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml/badge.svg)](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml)
+
         <a href="https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml/badge.svg?branch=master&event=workflow_run">
+        <img src="https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml" alt="Actions build status" />
+    </a>
+            <a href="https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml/badge.svg?branch=master&event=workflow_run">
         <img src="https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml" alt="Actions build status" />
     </a>
 <table>
