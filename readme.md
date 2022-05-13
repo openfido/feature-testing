@@ -7,7 +7,6 @@ Pipeline status: [![validation](https://github.com/openfido/loadshape/actions/wo
 
 [![Tests](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml)
 [![Tests](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml/badge.svg)](https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml)
-
         <a href="https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml/badge.svg?branch=master&event=workflow_run">
         <img src="https://github.com/slacgismo/solar-data-tools/actions/workflows/test.yml" alt="Actions build status" />
     </a>
